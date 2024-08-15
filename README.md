@@ -58,6 +58,14 @@ The following Python packages are required:
 
 3. **The assistant will respond both in text and voice format.**
 
+## Limitations
+
+- **Voice Response Latency**: The voice output process may be slower due to the time required to generate the text-to-speech file and play it using `pygame`. This could be noticeable, especially for longer responses.
+  
+- **API Key Handling**: The API key is currently hardcoded, which is not secure. It's recommended to use environment variables or a secure configuration method.
+
+- **Chat History Growth**: Over time, the chat history might grow large, which could affect the performance. Consider managing or truncating old entries for long sessions.
+
 ## Note
 
 - **API Key**: Replace the `api_key` variable in the script with your Google API key.
